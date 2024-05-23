@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import { useEffect } from "react";
 import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   useEffect( () => {
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Testimonials />
     </main>
   );
 }

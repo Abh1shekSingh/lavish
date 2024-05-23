@@ -18,7 +18,7 @@ module.exports = {
         secondary: "#FFC0CB"
       },
       padding: {
-        sectionPadding: "2.5rem 4rem"
+        sectionPadding: "5rem 7rem"
       }
     },
    

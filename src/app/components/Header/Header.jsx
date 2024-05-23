@@ -30,7 +30,7 @@ const Header = () => {
     
     }, [isActive])
   return (
-    <header className='fixed right-[50px] top-[50px]'>
+    <header className='fixed z-[999] right-[50px] top-[50px]'>
         <div id='menu' className='relative rounded-xl bg-secondary'>
             {isActive && <Nav isActive = {isActive} />}
         </div>
