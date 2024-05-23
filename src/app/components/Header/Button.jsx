@@ -21,7 +21,7 @@ const Button = ({isActive, setIsActive}) => {
     }, [isActive])
   return (
     <div onClick={() => setIsActive(!isActive)} className='w-[100px] h-[40px] absolute top-0 right-0 overflow-hidden  rounded-full cursor-pointer'>
-        <div id='slider' className='relative w-full h-full font-[nunito]'>
+        <div id='slider' className='relative w-full h-full font-[nunito] uppercase'>
             <div className='w-full h-full bg-secondary flex justify-center items-center'>
                 <p>menu</p>
             </div>

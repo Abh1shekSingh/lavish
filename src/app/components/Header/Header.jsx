@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from 'react'
 import Button from './Button'
-import Image from 'next/image'
-import logo  from "../../../public/assets/logo.png";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Nav from './Nav';
