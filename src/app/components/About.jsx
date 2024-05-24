@@ -3,7 +3,7 @@ import React from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
-const paragraph = "Lavish Beauty Studio, nestled in the heart of Sydney, Australia,offers an exquisite range of beauty services tailored to enhance your natural radiance.Our skilled professionals specialize in bespoke treatments, from rejuvenating facials to luxurious manicures, ensuring a personalized experience for every client."
+const paragraph = "Lavish Beauty Studio, nestled in the heart of Adelaide, Australia,offers an exquisite range of beauty services tailored to enhance your natural radiance.Our skilled professionals specialize in bespoke treatments, from rejuvenating facials to luxurious manicures, ensuring a personalized experience for every client."
 const words = paragraph.split(' ');
 const About = () => {
     gsap.registerPlugin(ScrollTrigger);

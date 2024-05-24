@@ -14,8 +14,8 @@ module.exports = {
         "hero": "url('/public/assets/hero.png')",  
       },
       colors: {
-        primary: "#FFFFF0",
-        secondary: "#FFC0CB"
+        primary: "#FEFCF3",
+        secondary: "#DBA39A"
       },
       padding: {
         sectionPadding: "5rem 7rem"
