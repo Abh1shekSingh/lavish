@@ -20,12 +20,12 @@ const Button = ({isActive, setIsActive}) => {
         }
     }, [isActive])
   return (
-    <div onClick={() => setIsActive(!isActive)} className='w-[100px] h-[40px] absolute top-0 right-0 overflow-hidden  rounded-full cursor-pointer'>
-        <div id='slider' className='relative w-full h-full font-[nunito] uppercase'>
-            <div className='w-full h-full bg-secondary flex justify-center items-center'>
+    <div onClick={() => setIsActive(!isActive)} className='w-[100px] h-[40px] absolute top-0 right-0 overflow-hidden  rounded-xl cursor-pointer'>
+        <div id='slider' className='relative w-full h-full font-bold font-[nunito] uppercase'>
+            <div className='w-full h-full bg-black text-white flex justify-center items-center'>
                 <p>menu</p>
             </div>
-            <div className='w-full h-full absolute top-[100%] flex justify-center items-center bg-black text-white'>
+            <div className='w-full h-full absolute top-[100%] flex justify-center items-center bg-white text-black'>
                 <p>close</p>
             </div>
         </div>

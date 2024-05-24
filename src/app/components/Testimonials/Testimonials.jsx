@@ -17,7 +17,6 @@ const testimonials = [
   { id: 11, text: "Great customer service! Got the eyebrows heading done and amit did fabulous job.", author: "Preet" },
   { id: 12, text: "Thank you so much ladies for always fitting me in last minute. Love your customer service and my brows have never looked this good! Special thank you to Meena she is so lovely and always takes good care of me", author: "Georgia" },
   { id: 13, text: "Amazing attention to detail and client comfort. Super impressed!", author: "Lydia" },
-  // Add more testimonials if needed
 ];
 
 const Testimonials = () => {
@@ -43,17 +42,17 @@ const Testimonials = () => {
   
 
   return (
-    <section id='testimonials' className='mt-[-100svh] p-sectionPadding'>
+    <section id='testimonials' className='mt-[-100svh] xl:p-sectionPadding px-5 pt-14'>
       <div className='relative h-svh'></div>
-      <div className='sticky min-h-screen -bottom-80 overflow-hidden'>
+      <div className='sticky min-h-[70vh] -bottom-80 overflow-hidden'>
         <div className='absolute top-0'>
-          <h1 className='font-[melodrama] text-5xl mb-24'>Our Happy Customers</h1>
+          <h1 className='font-[melodrama] xl:text-5xl text-3xl w-full xl:mb-24'>Our Happy Customers</h1>
           <div className='relative flex justify-center items-center'>
             <div ref={firstText} className='m-0 flex gap-12 '>
               {
                 testimonials.map((testimonial, index) => {
-                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  w-[400px] h-[400px] p-7 gap-8'>
-                    <h1 className='font-[nunito] text-center text-3xl'>"{testimonial.text}"</h1>
+                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  xl:w-[400px] w-[300px] h-[400px] p-7 gap-8'>
+                    <h1 className='font-[nunito] text-center xl:text-3xl'>"{testimonial.text}"</h1>
                     <h6 className='font-[nunito] text-center text-sm italic'>-{testimonial.author}</h6>
                   </div> 
                 })
@@ -62,8 +61,8 @@ const Testimonials = () => {
             <div ref={secondText} className='m-0 flex gap-12 '>
               {
                 testimonials.map((testimonial, index) => {
-                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  w-[400px] h-[400px] p-7 gap-8'>
-                    <h1 className='font-[nunito] text-center text-3xl'>"{testimonial.text}"</h1>
+                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  xl:w-[400px] xl:[300px] h-[400px] p-7 gap-8'>
+                    <h1 className='font-[nunito] text-center xl:text-3xl'>"{testimonial.text}"</h1>
                     <h6 className='font-[nunito] text-center text-sm italic'>-{testimonial.author}</h6>
                   </div> 
                 })

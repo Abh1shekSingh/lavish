@@ -33,28 +33,32 @@ const Nav = ({isActive}) => {
     }, [isActive])
 
   return (
-    <nav className='h-full pt-[100px] pl-[40px] pb-[50px] pr-[40px] font-[nunito] flex flex-col justify-between'>
+    <nav className='h-full pt-[100px] pl-[40px] pb-[50px] pr-[40px] font-[nunito] flex flex-col justify-between border-2 border-black rounded-xl'>
         <div className='flex flex-col gap-8'>
-            <a href='/' className='text-4xl '>
+            <a href='/' className='xl:text-4xl text-2xl '>
                 <span className='inline-flex overflow-hidden'>
                     <span id='about' className='inline-block'>About</span>
                 </span>
             </a>
-            <a href='/' className='text-4xl '>
+            <a href='/' className='xl:text-4xl text-2xl'>
                 <span className='inline-flex overflow-hidden'>
                     <span id='services' className='inline-block'>Services</span>
                 </span>
             </a>
-            <a href='/' className='text-4xl '>
+            <a href='/' className='xl:text-4xl text-2xl'>
                 <span className='inline-flex overflow-hidden'>
                     <span id='gallery' className='inline-block'>Gallery</span>
+                </span>
+            </a>
+            <a href='/' className='xl:text-4xl text-2xl'>
+                <span className='inline-flex overflow-hidden'>
+                    <span id='gallery' className='inline-block'>Book Now</span>
                 </span>
             </a>
         </div>
         <div className='flex gap-8 justify-center items-center'>
             <a href='/' className='social text-md'>Instagram</a>
             <a href='/' className='social text-md'>Facebook</a>
-            <a href='/' className='social text-md bg-white px-4 py-2 rounded-full'>Book Now!</a>
         </div>
     </nav>
   )
