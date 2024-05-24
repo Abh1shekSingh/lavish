@@ -109,7 +109,7 @@ const Services = () => {
                             </div>
                             <div className='work-right flex flex-1 lg:items-center justify-center h-screen'>
                                 <div className='w-full max-w-md pt-10 lg:pt-0 px-10 md:px-0 image'>
-                                    <Image src={service.image} width={400} height={400} alt={service.text} className={`rounded-3xl ${index === 5 ? '!w-[1000px]' : null}`} />
+                                    <Image src={service.image} width={400} height={400} alt={service.text} className='rounded-3xl ' />
                                 </div>
                             </div>
                         </div>
