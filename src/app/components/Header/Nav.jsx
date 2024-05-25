@@ -56,15 +56,15 @@ const Nav = ({isActive}) => {
                     <span id='gallery' className='inline-block'>Gallery</span>
                 </span>
             </Link>
-            <Link href='/' className='xl:text-4xl text-2xl'>
+            <Link href='https://bookings.gettimely.com/lavishbeautystudio1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F146599%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue' target='_blank' className='xl:text-4xl text-2xl'>
                 <span className='inline-flex overflow-hidden'>
                     <span id='gallery' className='inline-block'>Book Now</span>
                 </span>
             </Link>
         </div>
         <div className='flex gap-8 justify-center items-center'>
-            <a href='/' className='social text-md'>Instagram</a>
-            <a href='/' className='social text-md'>Facebook</a>
+            <Link href='https://www.instagram.com/studiolavishbeauty/' target='_blank' className='social text-md'>Instagram</Link>
+            <Link href='https://www.facebook.com/lavishbeautystudio.com.au/?ref=page_internal' target='_blank' className='social text-md'>Facebook</Link>
         </div>
     </nav>
   )
