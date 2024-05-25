@@ -23,7 +23,7 @@ const images = [
   "11.png",
   "12.png",
 ]
-const page = () => {
+const About = () => {
     useEffect( () => {
         (
           async () => {
@@ -107,4 +107,4 @@ const Column = ({imagess}) => {
   )
 }
 
-export default page
+export default About

@@ -52,7 +52,7 @@ const Testimonials = () => {
               {
                 testimonials.map((testimonial, index) => {
                   return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  xl:w-[400px] w-[300px] h-[400px] p-7 gap-8'>
-                    <h1 className='font-[nunito] text-center xl:text-3xl'>"{testimonial.text}"</h1>
+                    <h1 className='font-[nunito] text-center xl:text-3xl'>&quot;{testimonial.text}&quot;</h1>
                     <h6 className='font-[nunito] text-center text-sm italic'>-{testimonial.author}</h6>
                   </div> 
                 })
@@ -62,7 +62,7 @@ const Testimonials = () => {
               {
                 testimonials.map((testimonial, index) => {
                   return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  xl:w-[400px] xl:[300px] h-[400px] p-7 gap-8'>
-                    <h1 className='font-[nunito] text-center xl:text-3xl'>"{testimonial.text}"</h1>
+                    <h1 className='font-[nunito] text-center xl:text-3xl'>&quot;{testimonial.text}&quot;</h1>
                     <h6 className='font-[nunito] text-center text-sm italic'>-{testimonial.author}</h6>
                   </div> 
                 })
