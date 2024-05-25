@@ -1,6 +1,7 @@
 import React from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import Link from 'next/link'
 const Nav = ({isActive}) => {
 
     useGSAP(() => {
@@ -35,26 +36,31 @@ const Nav = ({isActive}) => {
   return (
     <nav className='h-full pt-[100px] pl-[40px] pb-[50px] pr-[40px] font-[nunito] flex flex-col justify-between border-2 border-black rounded-xl'>
         <div className='flex flex-col gap-8'>
-            <a href='/' className='xl:text-4xl text-2xl '>
+            <Link href='/' className='xl:text-4xl text-2xl'>
+                <span className='inline-flex overflow-hidden'>
+                    <span id='about' className='inline-block'>Home</span>
+                </span>
+            </Link>
+            <Link href='/about' className='xl:text-4xl text-2xl '>
                 <span className='inline-flex overflow-hidden'>
                     <span id='about' className='inline-block'>About</span>
                 </span>
-            </a>
-            <a href='/' className='xl:text-4xl text-2xl'>
+            </Link>
+            <Link href='/' className='xl:text-4xl text-2xl'>
                 <span className='inline-flex overflow-hidden'>
                     <span id='services' className='inline-block'>Services</span>
                 </span>
-            </a>
-            <a href='/' className='xl:text-4xl text-2xl'>
+            </Link>
+            <Link href='/' className='xl:text-4xl text-2xl'>
                 <span className='inline-flex overflow-hidden'>
                     <span id='gallery' className='inline-block'>Gallery</span>
                 </span>
-            </a>
-            <a href='/' className='xl:text-4xl text-2xl'>
+            </Link>
+            <Link href='/' className='xl:text-4xl text-2xl'>
                 <span className='inline-flex overflow-hidden'>
                     <span id='gallery' className='inline-block'>Book Now</span>
                 </span>
-            </a>
+            </Link>
         </div>
         <div className='flex gap-8 justify-center items-center'>
             <a href='/' className='social text-md'>Instagram</a>

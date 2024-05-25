@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className='xl:col-span-3 col-span-12 mt-7 xl:mt-0 flex justify-end items-start flex-col gap-8'>
           <h2 className='text-[nunito] text-lg xl:w-3/4'>Ready to feel your best? Click here to book your appointment now!</h2>
-          <button className='bg-primary text-[nunito] text-secondary font-bold w-full uppercase py-4 flex justify-center items-center xl:text-xl '>Book your appointment <MdArrowOutward /></button>
+          <button className='bg-primary text-[nunito] text-secondary font-bold w-full uppercase py-4 flex justify-center items-center xl:text-xl'>Book your appointment <MdArrowOutward /></button>
         </div>
       </div>
       <div className='xl:mt-24 mt-12 grid grid-cols-12 border-b-2'>
