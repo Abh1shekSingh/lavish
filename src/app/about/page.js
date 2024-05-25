@@ -73,9 +73,9 @@ const About = () => {
               </span>
             </h1>
             <div className='relative flex justify-center mt-9 items-center z-0 mx-auto w-full overflow-hidden'>
-              <Image className='aspect-auto absolute left-[15%]  -z-[1] object-cover opacity-80' src={cloud} alt="loop" width={400} height={400} />
-              <Image className='aspect-auto absolute right-[15%]  -z-[1] object-cover opacity-80' src={cloud} alt="loop" width={400} height={400} />
-              <Image className='aspect-auto rounded object-cover' src={owner} alt="owner of lavish beauty salon" width={500} height={500} />
+              <Image className='aspect-auto absolute left-[15%]  -z-[1] object-cover opacity-80' src={cloud} alt="loop" width={400} height={400} loading='lazy' />
+              <Image className='aspect-auto absolute right-[15%]  -z-[1] object-cover opacity-80' src={cloud} alt="loop" width={400} height={400} loading='lazy' />
+              <Image className='aspect-auto rounded object-cover' src={owner} alt="owner of lavish beauty salon" width={500} height={500} loading='lazy' />
               <div className='w-[500px] rounded h-full absolute top-0  bg-gradient-to-t from-primary  to-transparent '></div>
             </div>
           </div>
@@ -93,18 +93,18 @@ const About = () => {
   )
 }
 
-const Column = ({imagess}) => {
-  return (
-    <div className='w-[25%] h-[100%] flex flex-col gap-8 min-w-[250px]'>
-      {
-        imagess.map((image, i) => {
-          return <div key={i} className='w-[100%] h-[100%] relative'>
-            <Image src={`/assets/${image}`} fill alt={`image ${i}`} objectFit='cover'/>
-          </div>
-        })
-      }
-    </div>
-  )
-}
+// const Column = ({imagess}) => {
+//   return (
+//     <div className='w-[25%] h-[100%] flex flex-col gap-8 min-w-[250px]'>
+//       {
+//         imagess.map((image, i) => {
+//           return <div key={i} className='w-[100%] h-[100%] relative'>
+//             <Image src={`/assets/${image}`} fill alt={`image ${i}`} objectFit='cover'/>
+//           </div>
+//         })
+//       }
+//     </div>
+//   )
+// }
 
 export default About

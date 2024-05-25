@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
       <div className='xl:mt-24 mt-12 grid grid-cols-12 border-b-2'>
         <div className='xl:col-span-4 mt-12 xl:mt-0 order-last xl:order-first col-span-12 mb-4'>
-          <Image src={logo} alt='logo' className='opacity-100' width={500} height={500}/>
+          <Image src={logo} alt='logo' className='opacity-100' width={500} height={500} loading='lazy'/>
         </div>
         <div className='xl:col-span-4 col-span-12 flex justify-center xl:items-end flex-col'>
           <h1 className='font-[melodrama] uppercase text-3xl mb-2'>Harbour town</h1>

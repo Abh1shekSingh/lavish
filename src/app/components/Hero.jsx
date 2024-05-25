@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section id='hero' className='px-12 xl:px-24 py-12 w-full flex flex-col justify-between h-screen'>
         <div>
-            <Image src={logo} width={100} height={100} alt='lavish beauty studio logo in black color tone' />
+            <Image src={logo} width={100} height={100} alt='lavish beauty studio logo in black color tone' loading='lazy' />
         </div>
         <div className='flex flex-col gap-4 items-baseline justify-end xl:p-24 '>
             <h1 className='flex flex-col w-full leading-tight'>
