@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
-import logo from "/public/assets/logo.png";
+import logo from "/public/assets/Optimised/logo.webp";
 
 const Footer = () => {
   return (

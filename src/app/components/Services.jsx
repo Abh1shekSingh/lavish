@@ -2,15 +2,15 @@ import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import hybrid from "/public/assets/HYBRID.png";
-import wispy from "/public/assets/wispy.png";
-import facial from "/public/assets/facial.png";
-import waxing from "/public/assets/waxing.png";
-import volume from "/public/assets/volume.png";
-import classic from "/public/assets/classic.png";
-import lash from "/public/assets/lash.png";
-import threading from "/public/assets/threading.png";
-import tinting from "/public/assets/tinting.png";
+import hybrid from "/public/assets/Optimised/HYBRID.webp";
+import wispy from "/public/assets/Optimised/wispy.webp";
+import facial from "/public/assets/Optimised/facial.webp";
+import waxing from "/public/assets/Optimised/waxing.webp";
+import volume from "/public/assets/Optimised/volume.webp";
+import classic from "/public/assets/Optimised/classic.webp";
+import lash from "/public/assets/Optimised/lash.webp";
+import threading from "/public/assets/Optimised/threading.webp";
+import tinting from "/public/assets/Optimised/tinting.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,7 +83,7 @@ const Services = () => {
         <section ref={targetRef} className='w-full h-[900vh] relative z-20'>
             <div className='absolute w-full h-full'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen sticky top-0'>
-                    <div className='bg-secondary h-[30vh] rounded-t-3xl xl:rounded-tl-3xl lg:h-auto'></div>
+                    <div className='bg-secondary h-[30vh] rounded-t-3xl xl:rounded-tr-none lg:h-auto'></div>
                     <div className='bg-primary h-[90vh] rounded-tr-3xl lg:min-h-screen'></div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image'
 import React from 'react'
-import logo from "../../../public/assets/logo.png";
+import logo from "../../../public/assets/Optimised/logo.webp";
 import { MdArrowOutward } from "react-icons/md";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
