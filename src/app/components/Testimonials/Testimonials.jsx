@@ -46,7 +46,7 @@ const Testimonials = () => {
       <div className='relative h-svh'></div>
       <div className='sticky min-h-[70vh] -bottom-80 overflow-hidden'>
         <div className='absolute top-0'>
-          <h1 className='font-[melodrama] xl:text-5xl text-3xl w-full xl:mb-24'>Our Happy Customers</h1>
+          <h1 className='font-[melodrama] xl:text-5xl text-3xl w-full xl:mb-24'>Our <span className='italic text-secondary'>Happy</span> Customers</h1>
           <div className='relative flex justify-center items-center'>
             <div ref={firstText} className='m-0 flex gap-12 '>
               {
