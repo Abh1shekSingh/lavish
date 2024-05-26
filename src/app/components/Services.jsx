@@ -81,7 +81,7 @@ const Services = () => {
 
     return (
         
-        <section ref={targetRef} className='w-full h-[900vh] relative z-20'>
+        <section id='services' ref={targetRef} className='w-full h-[900vh] relative z-20'>
             <div className='absolute w-full h-full'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen sticky top-0'>
                     <div className='bg-secondary h-[30vh] rounded-t-3xl xl:rounded-tr-none lg:h-auto'></div>

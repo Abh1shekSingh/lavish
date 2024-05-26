@@ -47,7 +47,7 @@ const Hero = () => {
             <p className='inline-flex overflow-hidden'>
                 <span className='subheading xl:text-2xl font-[nunito] text-primary'>Offering wide range of services.</span>
             </p>
-            <Link href="https://bookings.gettimely.com/lavishbeautystudio1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F146599%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" target='_blank'><button className= 'button xl:text-xl bg-secondary px-4 py-2 rounded-full text-center flex justify-center items-center  font-[nunito] uppercase'>Book Now <MdArrowOutward /> </button></Link>
+            <Link href="https://bookings.gettimely.com/lavishbeautystudio1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F146599%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" target='_blank'><button className= 'button xl:text-xl bg-secondary px-4 py-2 rounded-full text-center flex text-white justify-center items-center gap-1 font-[nunito] uppercase'>Book Now <MdArrowOutward className='text-2xl' /> </button></Link>
         </div>
     </section>
   )
