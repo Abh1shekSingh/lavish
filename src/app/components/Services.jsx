@@ -52,10 +52,11 @@ const Services = () => {
                         start: () => `top+=${(index + 1) * 100}% top`,
                         end: () => `top+=${(index + 2) * 100}% top`,
                         scrub: true,
-                        toggleActions: 'play none none reverse',
                     }
                 }
             );
+
+            
           }
         });
 
@@ -68,11 +69,10 @@ const Services = () => {
                 duration: 0.5,
                 ease: "power4.out",
                 scrollTrigger: {
-                    trigger: elements[1], // Trigger on the second image
+                    trigger: elements[1], 
                     start: "top+=100% top",
                     end: "top+=200% top",
                     scrub: true,
-                    toggleActions: 'play none none reverse',
                 }
             }
         );
@@ -90,15 +90,15 @@ const Services = () => {
             </div>
             <div className='sticky top-0 h-screen overflow-hidden'>
                 {[
-                    { image: hybrid, text: 'Eyelash hybrid' },
-                    { image: wispy, text: 'Eyelash Wispy' },
-                    { image: facial, text: 'Facial Massage' },
-                    { image: lash, text: 'Last Lift & Removal' },
-                    { image: classic, text: 'Eyelash Classic' },
-                    { image: waxing, text: 'Waxing' },
-                    { image: threading, text: 'Threading' },
-                    { image: tinting, text: 'Tinting' },
-                    { image: volume, text: 'Eyelash Volume' }
+                    {index:0, image: hybrid, text: 'Eyelash hybrid' },
+                    {index:0, image: wispy, text: 'Eyelash Wispy' },
+                    {index:0, image: facial, text: 'Facial Massage' },
+                    {index:0, image: lash, text: 'Last Lift & Removal' },
+                    {index:0, image: classic, text: 'Eyelash Classic' },
+                    {index:0, image: waxing, text: 'Waxing' },
+                    {index:0, image: threading, text: 'Threading' },
+                    {index:0, image: tinting, text: 'Tinting' },
+                    {index:0, image: volume, text: 'Eyelash Volume' }
                 ].map((service, index) => (
                     <div key={index} className={`service absolute top-0 w-full`}>
                         <div className='grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen'>
@@ -110,7 +110,7 @@ const Services = () => {
                             </div>
                             <div className='work-right flex flex-1 lg:items-center justify-center h-screen'>
                                 <div className='w-full max-w-md pt-10 lg:pt-0 px-10 md:px-0 image'>
-                                    <Image src={service.image} width={400} height={400} alt={service.text} className='rounded-3xl ' />
+                                    <Image src={service.image} width={400} height={400} alt={service.text} />
                                 </div>
                             </div>
                         </div>

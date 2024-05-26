@@ -29,6 +29,23 @@ const Testimonials = () => {
     requestAnimationFrame(animation);
   },[])
 
+  useGSAP(() => {
+    gsap.from('#testimonial-heading', {
+      duration: 5,
+      y: 100,
+      opacity: 0,
+      ease: 'power4.out',
+      scrollTrigger: {
+        trigger: '#testimonial-heading',
+        start: 'top 90%',
+        end: 'bottom 90%',
+        scrub: true,
+        once: true
+      }
+    })
+  
+  })
+
   const animation = () => {
     if(xPercent <= -100) {
       xPercent = 0;
@@ -46,13 +63,17 @@ const Testimonials = () => {
       <div className='relative h-svh'></div>
       <div className='sticky min-h-[70vh] -bottom-80 overflow-hidden'>
         <div className='absolute top-0'>
-          <h1 className='font-[melodrama] xl:text-5xl text-3xl w-full xl:mb-24'>Our <span className='italic text-secondary'>Happy</span> Customers</h1>
+          <h1 className='font-[melodrama] xl:text-7xl text-3xl w-full xl:mb-24'>
+            <span className='inline-flex overflow-hidden'>
+              <span id='testimonial-heading'>Our Happy Customers</span>
+            </span>
+          </h1>
           <div className='relative flex justify-center items-center'>
             <div ref={firstText} className='m-0 flex gap-12 '>
               {
                 testimonials.map((testimonial, index) => {
-                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  xl:w-[400px] w-[300px] h-[400px] p-7 gap-8'>
-                    <h1 className='font-[nunito] text-center xl:text-3xl'>&quot;{testimonial.text}&quot;</h1>
+                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center p-7 xl:w-[400px] w-[300px] h-[400px] gap-8'>
+                    <h1 className='font-[nunito] text-center xl:text-2xl'>&quot;{testimonial.text}&quot;</h1>
                     <h6 className='font-[nunito] text-center text-sm italic'>-{testimonial.author}</h6>
                   </div> 
                 })
@@ -61,7 +82,7 @@ const Testimonials = () => {
             <div ref={secondText} className='m-0 flex gap-12 '>
               {
                 testimonials.map((testimonial, index) => {
-                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center  xl:w-[400px] xl:[300px] h-[400px] p-7 gap-8'>
+                  return <div key={index} className='flex flex-col justify-center rounded-3xl items-center p-7 xl:w-[400px] xl:[300px] h-[400px] gap-8'>
                     <h1 className='font-[nunito] text-center xl:text-3xl'>&quot;{testimonial.text}&quot;</h1>
                     <h6 className='font-[nunito] text-center text-sm italic'>-{testimonial.author}</h6>
                   </div> 
