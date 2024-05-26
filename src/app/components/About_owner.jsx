@@ -50,7 +50,7 @@ const About_owner = () => {
     <section id='about' className='w-full relative z-[20] bg-primary min-h-screen xl:p-sectionPadding px-12 py-12'>
         <div>
           <div className='relative'>
-            <h1 className='xl:text-7xl text-5xl font-[melodrama] xl:w-3/5 w-full'>
+            <h1 className='xl:text-7xl text-dark text-5xl font-[melodrama] xl:w-3/5 w-full'>
               <span className='overflow-hidden inline-flex'>
                 <span id='about-heading'>Unleash Your Inner Beauty with Our Expert Touch.</span>
               </span>
@@ -65,7 +65,7 @@ const About_owner = () => {
               <div className='w-[500px] rounded h-full absolute top-0  bg-gradient-to-t from-primary  to-transparent '></div>
             </div>
           </div>
-          <h4 className='-mt-8 w-full relative z-2 font-[nunito] xl:text-2xl text-xl flex justify-end items-end'>
+          <h4 className='-mt-8 w-full relative z-2 font-[nunito] xl:text-2xl text-dark text-xl flex justify-end items-end'>
             <span id='about-text-owner' className='max-w-[44ch]'>Lavish Beauty Studio is a family-owned and operated business. Despite the challenges of the COVID-19 pandemic, we boldly launched at Harbour Town Shopping Centre in August 2020. Our passion for beauty is unwavering, and we are committed to providing precision, perfection, and perseverance through our highly trained staff. We ensure our customers receive excellent services and professional advice.</span>
           </h4>
         </div>

@@ -15,7 +15,8 @@ module.exports = {
       },
       colors: {
         primary: "#FEFCF3",
-        secondary: "#DBA39A"
+        secondary: "#DBA39A",
+        dark: "#333333",
       },
       padding: {
         sectionPadding: "5rem 7rem"

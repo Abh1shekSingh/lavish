@@ -63,12 +63,12 @@ const Testimonials = () => {
       <div className='relative h-svh'></div>
       <div className='sticky min-h-[70vh] -bottom-80 overflow-hidden'>
         <div className='absolute top-0'>
-          <h1 className='font-[melodrama] xl:text-7xl text-3xl w-full xl:mb-24'>
+          <h1 className='font-[melodrama] xl:text-7xl text-dark text-3xl w-full xl:mb-24'>
             <span className='inline-flex overflow-hidden'>
               <span id='testimonial-heading'>Our Happy Customers</span>
             </span>
           </h1>
-          <div className='relative flex justify-center items-center'>
+          <div className='relative flex text-dark justify-center items-center'>
             <div ref={firstText} className='m-0 flex gap-12 '>
               {
                 testimonials.map((testimonial, index) => {
