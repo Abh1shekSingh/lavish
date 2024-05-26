@@ -5,6 +5,7 @@ import About from "./components/About";
 import { useEffect } from "react";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
+import About_owner from "./components/About_owner";
 
 export default function Home() {
   useEffect( () => {
@@ -24,7 +25,10 @@ export default function Home() {
     <main className="">
       <Hero />
       <About />
-      <Services />
+      <div className="w-full z-20 min-h-screen">
+        <Services />
+        <About_owner />
+      </div>
       <Testimonials />
     </main>
   );

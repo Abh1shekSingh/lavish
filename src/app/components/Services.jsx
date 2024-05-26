@@ -80,6 +80,7 @@ const Services = () => {
     }, []);
 
     return (
+        
         <section ref={targetRef} className='w-full h-[900vh] relative z-20'>
             <div className='absolute w-full h-full'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen sticky top-0'>

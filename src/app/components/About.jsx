@@ -21,11 +21,24 @@ const About = () => {
 
             },
         })
+        gsap.to('#about-text-lift', {
+            duration: 2,
+            opacity: 0,
+            y:-50,
+            ease: 'power4.out',
+            stagger:1,
+            scrollTrigger: {
+                trigger: '#about-text',
+                start: 'top+=400px center',
+                end: 'bottom+=600px center',
+                scrub: true,
+            },
+        })
     })
   return (
     <section className='mb-[-100svh]'>
         <div className='bg-primary h-svh top-0 sticky w-full flex justify-center items-center'>
-            <h3  className='font-[nunito] flex flex-wrap xl:text-4xl text-xl px-7 max-w-[50ch]'>
+            <h3 id='about-text-lift'  className='font-[nunito] flex flex-wrap font-bold xl:text-4xl text-xl px-7 max-w-[50ch]'>
                 {
                     words.map((word, i) => {
                         return <Word key={i}>{word}</Word>
